@@ -10,13 +10,13 @@ import {
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/store/useAppStore";
 
-const navItems = [
+const navItems: { to: string; label: string; icon: typeof LayoutDashboard; exact?: boolean }[] = [
   { to: "/", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { to: "/datasets", label: "Datasets", icon: Database },
   { to: "/evaluate", label: "Run Evaluation", icon: PlayCircle },
   { to: "/results", label: "Results", icon: ListChecks },
   { to: "/metrics", label: "Metrics", icon: BarChart3 },
-] as const;
+];
 
 export function Sidebar() {
   const location = useLocation();
