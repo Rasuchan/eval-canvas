@@ -19,7 +19,7 @@ import { api } from "@/services/api";
 import { formatDate, formatDuration } from "@/utils/format";
 import { ArrowUpRight } from "lucide-react";
 
-export const Route = createFileRoute("/results")({
+export const Route = createFileRoute("/results/")({
   head: () => ({
     meta: [
       { title: "Results — EvalOps" },
